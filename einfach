@@ -1,0 +1,45 @@
+#!/bin/bash
+echo -e "\e[036m======================================================================= "
+echo -e "\e[032m _ _____   _   _      _   _______     ___        _______   _      _     "
+echo -e "\e[032m| |_____| | | | |\   | | | |_____|   / _ \      / ______| | |    | |    "
+echo -e "\e[032m| |___    | | | | \  | | | |_____   / /_\ \    | |        | |____| |    "
+echo -e "\e[032m| |___    | | | |\ \ | | | |_____| / /___\ \   | |        | |____| |    "
+echo -e "\e[032m| |_____  | | | | \ \| | | |      / /     \ \  | |______  | |    | |    "
+echo -e "\e[032m|_|_____| |_| |_|  \ |_| |_|     /_/       \_\  \_______| |_|    |_|    "
+echo -e "\e[036m====================================================================== "
+echo -e "\e[032m                            Version 2.1 Beta "
+echo -e "\e[032m                       Created by ESPY (espy-tech)"
+echo -e "\e[036m                  ---------------------------------------  "
+echo -e "                   \e[036m" "╠═▶ 𝗦𝗲𝗹𝗲𝗰𝘁 Your Option ➳"
+echo -e "                   \e[032m" "╠═▶ 1. Update"
+echo -e "                   \e[032m" "╠═▶ 2. Basic Installation"
+echo -e "                   \e[032m" "╠═▶ 3. Web Browser"
+echo -e "                   \e[032m" "╠═▶ 4. My Ip"
+echo -e "                   \e[032m" "╠═▶ 5. Hacking tools"
+read -p " ╚═➤ " option
+if [ "$option" -eq "1" ]
+then
+    echo -e "\e[035m"  "Updating default packages\n"
+apt update && apt upgrade -y
+
+elif [ "$option" -eq "2" ]
+then
+    echo -e "\e[033m" "Installing python\n"
+    pkg install python -y
+    pkg install git -y
+
+elif [ "$option" -eq "3" ]
+then
+    echo -e "\e[033m" "Installing termux browser\n"
+    pkg install tor
+
+elif [ "$option" -eq "4" ]
+then
+    echo -e "\e[033m" "Installing termux browser\n"
+    pkg install git -y
+
+    elif [ "$option" -eq "5" ]
+then
+    echo -e "\e[033m" "Installing termux browser\n"
+    pkg install pip
+fi
