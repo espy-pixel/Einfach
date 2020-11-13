@@ -2,19 +2,19 @@
 
 ...is a small script for beginners and that even would be a shortcut for advanced... You will find everything your terminal needs at the base for proper operation with the tools.
 
-## Update 1⃣
+## 1-Update
 
 The first Option will make a full update of your terminal
 
-## Basic Installation 2⃣
+## 2-Basic Installation
 
 The installation of the basic packages for a good adaptation to the tools that you will have to install in the future
 
-## Internet Browser with your terminal 3⃣
+## 3-Internet Browser with your terminal
 
-## Know your ip address 4⃣
+## 4-Know your ip address
 
-## Hacking basic tools 5⃣
+## 5-Hacking basic tools
 
 This option will install some basic hacking tools on your terminal like Nmap, Hydra ...
 
