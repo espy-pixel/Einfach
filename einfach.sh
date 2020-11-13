@@ -22,20 +22,13 @@ echo -e "\e[032m"                    "╠═▶ 2. Basic Installation"
 echo -e "\e[032m"                    "╠═▶ 3. Web Browser"
 echo -e "\e[032m"                    "╠═▶ 4. My Ip"
 echo -e "\e[032m"                    "╠═▶ 5. Hacking tools"
-read -p "                             ╚═➤ " option
+read -p " ╚═➤ " option
 
 
 if [ "$option" -eq "1" ]
 then
     echo -e "\e[035m"  "Updating default packages\n"
 apt update && apt upgrade -y
-
-echo -e "\e[032m" "Requesting acces to storage\n"
-sleep 2
-echo -e "\e[032m" "Allow Storage Permission!"
-sleep 2
-termux-setup-storage
-sleep 5
 
 elif [ "$option" -eq "2" ]
 then
